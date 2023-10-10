@@ -1704,6 +1704,14 @@
   resolved "https://registry.yarnpkg.com/@react-native-firebase/firestore/-/firestore-18.5.0.tgz#dbbcc0c29ac70b37277f8c4bc3a4ff241bfea381"
   integrity sha512-/LiCWjuB4YuPvxHz2H6Nu/dY3zjeIjLfzvMWAuHRb10UtRUxaFlgrIgWioR6plwv8JHrgZBNdnZCyc+sVxEqRg==
 
+"@react-native-mac/virtualized-lists@^0.72.0":
+  version "0.72.1"
+  resolved "https://registry.yarnpkg.com/@react-native-mac/virtualized-lists/-/virtualized-lists-0.72.1.tgz#a3c3954ad2114930f1bb01c22b55bbdf0cf5bac7"
+  integrity sha512-8WP4LrwTzVo+8WSbwPcj2W8EFCHSUT25yvuinu8a9JeX9a57Iab/4gGjrxZJ4Ffp4yd0M/WmyM28x9w+7CnIYA==
+  dependencies:
+    invariant "^2.2.4"
+    nullthrows "^1.1.1"
+
 "@react-native/assets-registry@^0.72.0":
   version "0.72.0"
   resolved "https://registry.yarnpkg.com/@react-native/assets-registry/-/assets-registry-0.72.0.tgz#c82a76a1d86ec0c3907be76f7faf97a32bbed05d"
@@ -5570,6 +5578,48 @@ react-native-flipper@^0.212.0:
   version "0.212.0"
   resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.212.0.tgz#b3fdd47676ecd09a25edd77a1466acace6276762"
   integrity sha512-bDRfIgE3v/jjEEdnvGP0T6maDD+bXhDAQ/SZUYTKd/CQ6YIU1c0EF+e0urU62LNMv6XEFQKz226McdddyVhYZA==
+
+react-native-macos@^0.72.1:
+  version "0.72.1"
+  resolved "https://registry.yarnpkg.com/react-native-macos/-/react-native-macos-0.72.1.tgz#9e661e91fa0eed5639f760686cbe314c104793c2"
+  integrity sha512-gGoLFfeCKv/eNl2X5L9Sk9N8i8YKK2RJU4ONmM70s2Ewzk5kixdpa/UMA0SIbMGGuxj4COgS1/VEocP9hw74fQ==
+  dependencies:
+    "@jest/create-cache-key-function" "^29.2.1"
+    "@react-native-community/cli" "11.3.7"
+    "@react-native-community/cli-platform-android" "11.3.7"
+    "@react-native-community/cli-platform-ios" "11.3.7"
+    "@react-native-mac/virtualized-lists" "^0.72.0"
+    "@react-native/assets-registry" "^0.72.0"
+    "@react-native/codegen" "^0.72.7"
+    "@react-native/gradle-plugin" "^0.72.11"
+    "@react-native/js-polyfills" "^0.72.1"
+    "@react-native/normalize-colors" "^0.72.0"
+    abort-controller "^3.0.0"
+    anser "^1.4.9"
+    base64-js "^1.1.2"
+    deprecated-react-native-prop-types "4.1.0"
+    event-target-shim "^5.0.1"
+    flow-enums-runtime "^0.0.5"
+    invariant "^2.2.4"
+    jest-environment-node "^29.2.1"
+    jsc-android "^250231.0.0"
+    memoize-one "^5.0.0"
+    metro-runtime "0.76.8"
+    metro-source-map "0.76.8"
+    mkdirp "^0.5.1"
+    nullthrows "^1.1.1"
+    pretty-format "^26.5.2"
+    promise "^8.3.0"
+    react-devtools-core "^4.27.2"
+    react-refresh "^0.4.0"
+    react-shallow-renderer "^16.15.0"
+    regenerator-runtime "^0.13.2"
+    scheduler "0.24.0-canary-efb381bbf-20230505"
+    stacktrace-parser "^0.1.10"
+    use-sync-external-store "^1.0.0"
+    whatwg-fetch "^3.0.0"
+    ws "^6.2.2"
+    yargs "^17.6.2"
 
 react-native-paper@^5.10.6:
   version "5.10.6"
