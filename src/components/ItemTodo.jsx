@@ -1,6 +1,7 @@
 import {View, Text, Button} from 'react-native';
 import React from 'react';
 import firestore from '@react-native-firebase/firestore';
+import {theme} from '../styles';
 
 const ItemTodo = ({todo}) => {
   const delTask = () => {
@@ -20,7 +21,9 @@ const ItemTodo = ({todo}) => {
       ) : (
         <Text style={{textDecorationLine: 'line-through'}}>{todo?.task}</Text>
       )}
+      {/* Modification du status de la task */}
       <Button title={todo.status ? 'À faire' : 'fait'} onPress={updTask} />
+      {/* Suppression de la task */}
       <Button title="Suppr" onPress={delTask} />
     </View>
   );

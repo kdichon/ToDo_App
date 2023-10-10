@@ -20,8 +20,9 @@ const ListTodo = () => {
       .collection('Todo')
       .onSnapshot(querySnapshot => {
         console.log('querySnapshot ->', querySnapshot);
-        // Lecture de document "doc" par document "doc"
+        // Initialissation du tableau de récupération
         const dataTodos = [];
+        // Lecture de document "doc" par document "doc"
         querySnapshot.forEach(doc => {
           // visualisation des datas du query
           //   console.log(doc.data());

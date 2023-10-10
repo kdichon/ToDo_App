@@ -1,7 +1,9 @@
-import {View, Text, TextInput} from 'react-native';
+import {View} from 'react-native';
 import React, {useState} from 'react';
-import {sytles} from '../styles';
+import {styles} from '../styles';
 import firestore from '@react-native-firebase/firestore';
+import {TextInput} from 'react-native-paper';
+// import FontAwesome from 'react-native-vector-icons/FontAwesome6';
 
 const AddTodo = () => {
   const [task, setTask] = useState('');
@@ -20,10 +22,12 @@ const AddTodo = () => {
   return (
     <View>
       <TextInput
-        style={sytles.addInput}
+        style={styles.addInput}
         value={task}
+        placeholder="Add a task"
         onChangeText={text => setTask(text)}
         onSubmitEditing={value => send(value.nativeEvent.text)}
+        right={<TextInput.Icon icon="add" />}
       />
     </View>
   );
