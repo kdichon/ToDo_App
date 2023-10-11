@@ -1,9 +1,9 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
+import Header from './components/Header';
 import AddTodo from './components/AddTodo';
 import ListTodo from './components/ListTodo';
-import Header from './components/Header';
 
 const Todo = () => {
   return (
