@@ -10,6 +10,15 @@ export const theme = {
     secondary: '#BDBDBD',
     error: '#f13a59',
     success: '#00B386',
+    lightColorElastic: '#f8e4d9',
+    colorElastic: '#fcf1ea',
+    darkColorElastic: '#fac5a4',
+    lightColorRunning: '#d7f0f7',
+    colorRunning: '#e8f7fc',
+    darkColorRunning: '#aceafc',
+    lightColorWeight: '#dad5fe',
+    colorWeight: '#e7e3ff',
+    darkColorWeight: '#8860a2',
   },
 };
 
