@@ -6,11 +6,12 @@ import Tuto from './Tuto/Tuto';
 import Leboncoin from './Tuto/leboncoin/Leboncoin';
 import {theme} from './src/styles';
 import Templates from './src/Templates';
+import Authapp from './Tuto/authapp/AuthApp';
 
 const App = () => {
   return (
     <PaperProvider theme={theme}>
-      <Templates />
+      <Authapp />
       {/* <Leboncoin /> */}
     </PaperProvider>
   );
