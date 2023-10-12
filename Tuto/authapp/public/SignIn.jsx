@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {Button, TextInput} from 'react-native-paper';
 import {theme} from '../../tutoStyles';
 import auth from '@react-native-firebase/auth';
+import {signInWithEmailAndPassword} from 'firebase/auth';
 
 const SignIn = ({navigation}) => {
   const [email, setEmail] = useState({value: '', error: ''});
@@ -15,7 +16,7 @@ const SignIn = ({navigation}) => {
   };
   const Login = async () => {
     try {
-      await auth().signInWithEmailAndPassword(email, password);
+      await signInWithEmailAndPassword(email, password);
     } catch (error) {
       // Envoi toutes les erreurs contenu dans le {"try"}
       console.log('error -> ', error);
