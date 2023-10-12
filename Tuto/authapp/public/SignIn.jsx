@@ -55,11 +55,6 @@ const SignIn = ({navigation}) => {
         </TouchableOpacity>
       </View>
       {/* <Toast message={error} onDismiss={() => setError('')} /> */}
-
-      {/* <Text>SignUp</Text>
-      <Button title="Login" onPress={goto}>
-        SignUp
-      </Button> */}
     </View>
   );
 };
