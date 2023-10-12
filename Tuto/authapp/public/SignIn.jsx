@@ -2,6 +2,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import {Button, TextInput} from 'react-native-paper';
 import {theme} from '../../tutoStyles';
+import auth from '@react-native-firebase/auth';
 
 const SignIn = ({navigation}) => {
   const [email, setEmail] = useState({value: '', error: ''});
@@ -12,8 +13,14 @@ const SignIn = ({navigation}) => {
   const goto = () => {
     navigation.navigate('Register');
   };
-  const Login = () => {
-    console.log('Envoi du login');
+  const Login = async () => {
+    try {
+      await auth().signInWithEmailAndPassword(email, password);
+    } catch (error) {
+      // Envoi toutes les erreurs contenu dans le {"try"}
+      console.log('error -> ', error);
+    }
+    console.log('Envoi du login', email, password);
   };
 
   return (
